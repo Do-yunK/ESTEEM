@@ -1,3 +1,75 @@
+/* Add Service Floating Action Button */
+.add-service-fab {
+    position: fixed;
+    right: 24px;
+    bottom: 110px; /* Move up to clear bottom nav */
+    z-index: 1055;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,86,179,0.18);
+    padding: 0;
+}
+.add-service-fab i {
+    color: #fff;
+    margin: 0;
+}
+.add-service-fab:active, .add-service-fab:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,86,179,0.25);
+}
+#chat-window-view #chat-form {
+    margin-top: 1.5rem;
+}
+#chat-window-view .file-row {
+    margin-bottom: 1.5rem;
+}
+/* Chat page spacing and message button styles */
+#chat-list-view .list-group-item {
+    margin-bottom: 1.2rem;
+    border-radius: 1rem;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border: 1px solid #e0e6ed;
+    background: #f8fafc;
+    transition: box-shadow 0.2s;
+}
+#chat-list-view .list-group-item:last-child {
+    margin-bottom: 0;
+}
+#chat-list-view .list-group-item:hover {
+    box-shadow: 0 4px 16px rgba(0,86,179,0.10);
+    background: #f1f5fa;
+}
+.message-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #0056b3;
+    color: #fff !important;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    text-decoration: none;
+}
+.message-btn:hover {
+    background: #003d80;
+    color: #fff !important;
+}
+# Bell button top right in header
+#bell-top-btn {
+    z-index: 1050;
+}
 body {
     padding-bottom: 180px;
 }
@@ -7,9 +79,11 @@ body {
 }
 
 
-H6{
-    padding-top: 24px;
-    padding-bottom: 14px;
+
+/* Remove h6 padding for services page */
+.container h6 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .nav-item:hover i {
